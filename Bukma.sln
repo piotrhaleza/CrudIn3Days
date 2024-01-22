@@ -5,6 +5,12 @@ VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bukma", "Bukma\Bukma.csproj", "{C905F992-532E-4AF6-8E80-7760ED13B30C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{7CD52C7A-C0E1-4FEE-8266-A725F116722A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{66219016-0D46-42E1-AB0D-8AA0251EC968}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database", "Database\Database.sqlproj", "{39AA01D2-80CC-4CE1-9CA6-3E7747ACE303}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,20 @@ Global
 		{C905F992-532E-4AF6-8E80-7760ED13B30C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C905F992-532E-4AF6-8E80-7760ED13B30C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C905F992-532E-4AF6-8E80-7760ED13B30C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CD52C7A-C0E1-4FEE-8266-A725F116722A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CD52C7A-C0E1-4FEE-8266-A725F116722A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CD52C7A-C0E1-4FEE-8266-A725F116722A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CD52C7A-C0E1-4FEE-8266-A725F116722A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66219016-0D46-42E1-AB0D-8AA0251EC968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66219016-0D46-42E1-AB0D-8AA0251EC968}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66219016-0D46-42E1-AB0D-8AA0251EC968}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66219016-0D46-42E1-AB0D-8AA0251EC968}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39AA01D2-80CC-4CE1-9CA6-3E7747ACE303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39AA01D2-80CC-4CE1-9CA6-3E7747ACE303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39AA01D2-80CC-4CE1-9CA6-3E7747ACE303}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{39AA01D2-80CC-4CE1-9CA6-3E7747ACE303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39AA01D2-80CC-4CE1-9CA6-3E7747ACE303}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39AA01D2-80CC-4CE1-9CA6-3E7747ACE303}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

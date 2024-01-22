@@ -3,10 +3,25 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ad="http://schemas.xceed.com/wpf/xaml/avalondock"
         xmlns:local="clr-namespace:Bukma"
+        xmlns:viewModels="clr-namespace:Bukma.ViewModels"
+        xmlns:cont ="clr-namespace:Bukma.Controls"
+        xmlns:view ="clr-namespace:Bukma.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="" Height="900" Width="1600">
+  <Grid Background="#ffB9CCE2">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="7*"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="4*"/>
+      <ColumnDefinition Width="16*"/>
+    </Grid.ColumnDefinitions>
+  
+    <view:OrderView Grid.Row="1" Grid.ColumnSpan="2"></view:OrderView>
+   
+
+  </Grid>
 </Window>

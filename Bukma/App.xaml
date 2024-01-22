@@ -4,6 +4,61 @@
              xmlns:local="clr-namespace:Bukma"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
-    </Application.Resources>
+
+    <Color x:Key="WhiteColor">White</Color>
+    <Color x:Key="BlackColor">Black</Color>
+    <Color x:Key="MainColor">#ff2C3E50</Color>
+    <Color x:Key="MainForegroundColor">White</Color>
+    <Color x:Key="HighlightColor">#ff26798F</Color>
+    <Color x:Key="SelectionColor">#ff009BF9</Color>
+    <Color x:Key="AssistantColor">#ffB9CCE2</Color>
+    <Color x:Key="BackgroundColor">White</Color>
+    <Color x:Key="ForegroundColor">Black</Color>
+    <Color x:Key="SubBackgroundColor">#ffEDFBFF</Color>
+    <Color x:Key="DarkSubBackgroundColor">#FFCCF1FF</Color>
+    <Color x:Key="SubForegroundColor">Black</Color>
+    <Color x:Key="RedColor">#AD4640</Color>
+
+    <SolidColorBrush x:Key="WhiteBrush" Color="{StaticResource WhiteColor}"/>
+    <SolidColorBrush x:Key="BlackBrush" Color="{StaticResource BlackColor}"/>
+    <SolidColorBrush x:Key="MainBrush" Color="{StaticResource MainColor}"/>
+    <SolidColorBrush x:Key="MainForegroundBrush" Color="{StaticResource MainForegroundColor}"/>
+    <SolidColorBrush x:Key="HighlightBrush" Color="{StaticResource HighlightColor}"/>
+    <SolidColorBrush x:Key="SelectionBrush" Color="{StaticResource SelectionColor}"/>
+    <SolidColorBrush x:Key="AssistantBrush" Color="{StaticResource AssistantColor}"/>
+    <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource BackgroundColor}"/>
+    <SolidColorBrush x:Key="ForegroundBrush" Color="{StaticResource ForegroundColor}"/>
+    <SolidColorBrush x:Key="SubBackgroundBrush" Color="{StaticResource SubBackgroundColor}"/>
+    <SolidColorBrush x:Key="DarkSubBackgroundBrush" Color="{StaticResource DarkSubBackgroundColor}"/>
+    <SolidColorBrush x:Key="SubForegorundBrush" Color="{StaticResource SubForegroundColor}"/>
+
+    <Style x:Key="MyMenuItem" TargetType="{x:Type ContextMenu}">
+      <Setter Property="Padding" Value="0"/>
+      <Setter Property="HasDropShadow" Value="False"/>
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="{x:Type ContextMenu}">
+            <Border x:Name="Border"
+                Background="{TemplateBinding Background}"
+                BorderThickness="1" BorderBrush="{TemplateBinding BorderBrush}">
+              <StackPanel IsItemsHost="True"
+                      KeyboardNavigation.DirectionalNavigation="Cycle" />
+            </Border>
+            <ControlTemplate.Triggers>
+              <Trigger Property="HasDropShadow"
+                   Value="true">
+                <Setter TargetName="Border"
+                    Property="Padding"
+                    Value="0,3,0,3" />
+                <Setter TargetName="Border"
+                    Property="CornerRadius"
+                    Value="4" />
+              </Trigger>
+            </ControlTemplate.Triggers>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+
+  </Application.Resources>
 </Application>

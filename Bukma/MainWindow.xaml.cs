@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Autofac;
+using Bukma.Factories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,11 @@ namespace Bukma
         public MainWindow()
         {
             InitializeComponent();
+            using (var scope = App.Container.BeginLifetimeScope())
+            {
+                var servicesFactory = scope.Resolve<IViewModelFactory>();
+                DataContext = servicesFactory.CreateMainWindowViewModel();
+            }
         }
     }
 }

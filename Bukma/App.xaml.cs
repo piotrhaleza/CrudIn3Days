@@ -5,6 +5,10 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using Autofac;
+using Bukma.Factories;
+using Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Bukma
 {
@@ -13,5 +17,17 @@ namespace Bukma
     /// </summary>
     public partial class App : Application
     {
+        public App()
+        {
+            CurrentApp = this;
+            Container = Startups.Configure();
+        }
+
+        public static IContainer Container { get; set; }
+
+        public static App CurrentApp { get; set; }
+
+        
+
     }
 }
